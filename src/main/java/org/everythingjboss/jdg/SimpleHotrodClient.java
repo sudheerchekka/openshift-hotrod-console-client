@@ -21,8 +21,8 @@ public class SimpleHotrodClient {
 		String jdgServerPort = System.getenv("DATAGRID_APP_HOTROD_SERVICE_PORT");
 
 		// Catch and handle null values
-		jdgServerHost = (jdgServerHost == null) ? "127.0.0.1" : jdgServerHost;
-		jdgServerPort = (jdgServerPort == null) ? "11222" : jdgServerPort;
+		jdgServerHost = (jdgServerHost == null) ? "datagrid-app-hotrod" : jdgServerHost;
+		jdgServerPort = (jdgServerPort == null) ? "11333" : jdgServerPort;
 
 		String serverEndpoint = jdgServerHost.concat(":").concat(jdgServerPort);
 
